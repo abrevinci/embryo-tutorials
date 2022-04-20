@@ -16,6 +16,8 @@ public class ViewModelFactory
 
 	public MainWindowViewModel CreateMainWindowViewModel()
 	{
-		return new MainWindowViewModel();
+		var counter = _state.Select(s => s.Counter);
+
+		return new MainWindowViewModel(counter, _dispatch);
 	}
 }

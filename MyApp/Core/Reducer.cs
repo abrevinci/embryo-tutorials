@@ -8,7 +8,7 @@ public static class Reducer
 	{
 		return message switch
 		{
-			// Todo: Add your switch cases here
+			Message.Increment => state.Increment(),
 			_ => state
 		};
 	}

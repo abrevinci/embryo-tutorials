@@ -1,6 +1,6 @@
 ﻿namespace MyApp.Core;
 
-public record State
+public record State(int Counter)
 {
-	public static readonly State InitialState = new();
+	public static readonly State InitialState = new(0);
 }
